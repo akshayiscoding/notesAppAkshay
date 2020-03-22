@@ -1,0 +1,14 @@
+<app-navbar (searchedText)="searchedText($event)"  (isDisable)="isDisable($event)"></app-navbar>
+
+<div class="">
+    <div class="row">
+        <div class="col-sm-1">
+            <app-side-bar [textForSearch]="textForSearch" (selectedNote)="selectedNote($event)"></app-side-bar>
+        </div>
+        <div class="col-sm-11">
+            <app-write-notes [isDisabled]="isDisabled" [selectedNoteItem]="selectedNoteItem"></app-write-notes>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

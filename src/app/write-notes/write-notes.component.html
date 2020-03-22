@@ -1,0 +1,13 @@
+
+<form class="top-padding container fixed">
+  <div class="form-group">
+    <h6 align="center" style="color: grey;" for="exampleInputEmail1">{{noteWritingDate}}</h6>
+    <label for="exampleInputEmail1">Type your Notes here ...</label>
+    <textarea [(ngModel)]="note" [ngModelOptions]="{standalone: true}" rows="15" cols="20" class="form-control" aria-label="With textarea"></textarea>
+    <!-- <input [(ngModel)]="note" class="form-control" aria-label="With textarea"></input> -->
+    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+  </div>
+  <button type="submit" (click)="submit()" class="btn btn-primary">Submit</button>
+
+  <!-- <button type="submit" (click)="getData()" class="btn btn-primary">get Data</button> -->
+</form>

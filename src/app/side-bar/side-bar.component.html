@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;padding-top: 5rem;min-height: max-content;overflow-y: scroll;">
+  <ul class="list-group list-group-flush" *ngFor="let x of filteredData" (click)="select(x)">
+    <li class="list-group-item">
+      <h5>{{x.note}}</h5>
+      <p>{{x.date}}</p>
+    </li>
+  </ul>
+</div>
